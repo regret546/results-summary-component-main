@@ -131,6 +131,10 @@ body {
   .result__stats {
     border-radius: 2rem !important;
   }
+
+  .flex-group {
+    width: 150px !important;
+  }
 }
 
 .result__header,
