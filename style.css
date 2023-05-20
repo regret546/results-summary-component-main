@@ -105,8 +105,29 @@ body {
   font-size: 16px;
 }
 
+.main {
+  height: 100vh;
+}
+
 .result > div {
   display: grid;
+}
+
+@media (min-width: 650px) {
+  .main {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .result {
+    display: grid;
+    max-width: 600px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0 20px 20px var(--clr-pale-blue);
+  }
 }
 
 .result__header,
@@ -164,8 +185,7 @@ body {
 }
 
 .result__summary {
-  display: grid;
-  padding: 1.5rem;
+  padding: 1.4rem;
   gap: 1rem;
 }
 
@@ -178,6 +198,7 @@ body {
   display: flex;
   padding: 1rem;
   margin-bottom: 1rem;
+  font-weight: var(--fw--bold);
 }
 
 .result__summary_content {
